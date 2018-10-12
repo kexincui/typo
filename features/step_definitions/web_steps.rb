@@ -43,6 +43,17 @@ Given /^the blog is set up$/ do
                 :state => 'active'})
 end
 
+When /^I follow "(.*)"%/ do |link|
+  click_link link
+end
+
+And /^I create a new "(.*)"$/ do |cat|
+  send "fill_out_#{cat}"
+  click_on_submit_button
+end
+
+
+
 And /^I am logged into the admin panel$/ do
   visit '/accounts/login'
   fill_in 'user_login', :with => 'admin'
