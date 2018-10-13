@@ -45,7 +45,6 @@ gem 'rubypants', '~> 0.2.0'
 gem 'rake', '~> 0.9.2'
 gem 'acts_as_list'
 gem 'acts_as_tree_rails3'
-# gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 gem 'recaptcha'
 
 group :development, :test do
@@ -54,9 +53,9 @@ group :development, :test do
   gem 'webrat'
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
-  # gem 'sqlite3'
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
+  gem 'pg'
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
   gem 'capybara'
