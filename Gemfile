@@ -46,6 +46,7 @@ gem 'rake', '~> 0.9.2'
 gem 'acts_as_list'
 gem 'acts_as_tree_rails3'
 gem 'recaptcha'
+gem 'pg'
 
 group :development, :test do
   gem 'ruby-debug19'
